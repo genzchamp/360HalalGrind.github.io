@@ -1,0 +1,107 @@
+/* 360HalalGrind — style.css
+   Bold, luxury-modern theme: dark rich bg + gold + white + neon-ash
+   Mobile-first, responsive
+*/
+
+/* Fonts: system stack for best compatibility */
+:root{
+  --bg:#0b0b0d;             /* very dark */
+  --card:#101217;
+  --gold:#D4AF37;           /* gold */
+  --white:#ffffff;
+  --muted:#bfc3c9;
+  --neon:#9fa6ad;           /* neon ash */
+  --container:1100px;
+  --radius:14px;
+}
+
+/* reset */
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  margin:0;
+  font-family:Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  background:linear-gradient(180deg,var(--bg) 0%, #09090b 100%);
+  color:var(--white);
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+  line-height:1.6;
+}
+
+/* layout helpers */
+.container{max-width:var(--container);margin:0 auto;padding:1.25rem}
+.header-inner, .footer-inner{display:flex;align-items:center;justify-content:space-between;gap:1rem}
+.header-inner .brand svg{display:block}
+
+/* header */
+.site-header{position:sticky;top:0;background:rgba(7,7,8,0.4);backdrop-filter: blur(6px);z-index:50;border-bottom:1px solid rgba(255,255,255,0.03)}
+.header-inner{padding:0.8rem 1rem}
+.main-nav{display:flex;gap:1rem}
+.main-nav a{color:var(--muted);text-decoration:none;padding:0.45rem 0.6rem;border-radius:8px;font-weight:600}
+.main-nav a:hover{color:var(--white);background:rgba(255,255,255,0.02)}
+
+/* nav toggle (mobile) */
+.nav-toggle{display:none;background:none;border:1px solid rgba(255,255,255,0.03);padding:0.4rem 0.6rem;color:var(--muted);border-radius:8px}
+
+/* HERO */
+.hero{padding:3rem 0}
+.hero-inner{display:grid;grid-template-columns:1fr;gap:2rem;align-items:center}
+.hero-text h1{font-size:2rem;letter-spacing:0.4px;margin:0 0 0.5rem;color:var(--white);font-weight:800}
+.lead{color:var(--gold);font-weight:700;margin-bottom:0.5rem}
+.sub{color:var(--muted);max-width:56ch}
+
+/* buttons */
+.btn{display:inline-block;padding:0.9rem 1.1rem;border-radius:12px;text-decoration:none;font-weight:700}
+.btn-primary{background:linear-gradient(90deg,var(--gold),#b08b23);color:#0a0a0a}
+.btn-outline{border:1px solid rgba(255,255,255,0.06);color:var(--white);background:transparent}
+
+/* hero-art */
+.card-brand{width:220px;height:140px;border-radius:20px;background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));display:flex;flex-direction:column;align-items:center;justify-content:center;border:1px solid rgba(255,255,255,0.03)}
+.floating-360{font-weight:900;font-size:36px;color:var(--gold)}
+.brand-line{color:var(--white);font-weight:700;letter-spacing:1px;margin-top:4px}
+
+/* FEATURES */
+.features{padding:2.5rem 0}
+.section-title{font-size:1.25rem;color:var(--white);margin-bottom:1rem;font-weight:800}
+.grid{display:grid;grid-template-columns:1fr;gap:1rem}
+.card{background:var(--card);padding:1rem;border-radius:12px;border:1px solid rgba(255,255,255,0.02)}
+
+/* QUICK START */
+.quick-start{padding:2.5rem 0}
+.split{display:grid;grid-template-columns:1fr;gap:1rem}
+.quote-card{background:linear-gradient(180deg, rgba(255,255,255,0.01), rgba(255,255,255,0.02));padding:1.25rem;border-radius:12px;border:1px solid rgba(255,255,255,0.03)}
+.q{font-style:italic;color:var(--neon);margin:0 0 0.5rem}
+.meta{color:var(--muted);font-weight:600}
+
+/* posts */
+.post{background:var(--card);padding:1rem;border-radius:10px;margin-bottom:1rem;border:1px solid rgba(255,255,255,0.02)}
+.post h2{margin-top:0;color:var(--white)}
+
+/* contact */
+.contact-grid{display:grid;grid-template-columns:1fr;gap:1rem}
+.contact-card{background:var(--card);padding:1rem;border-radius:10px;border:1px solid rgba(255,255,255,0.02)}
+
+/* footer */
+.site-footer{padding:1.5rem 0;margin-top:3rem;border-top:1px solid rgba(255,255,255,0.02)}
+.brand-small{font-weight:800;color:var(--gold)}
+.muted{color:var(--muted)}
+
+/* utilities */
+.content{padding:2rem 0}
+.steps{padding-left:1.1rem}
+
+/* responsive styles */
+@media(min-width:800px){
+  .hero-inner{grid-template-columns:1fr 420px}
+  .grid{grid-template-columns:repeat(3,1fr)}
+  .split{grid-template-columns:1fr 360px}
+  .contact-grid{grid-template-columns:repeat(2,1fr)}
+  .nav-toggle{display:none}
+  .main-nav{display:flex}
+}
+@media(max-width:799px){
+  .main-nav{display:none}
+  .nav-toggle{display:inline-block}
+  .header-inner{align-items:center}
+  .hero-text h1{font-size:1.6rem}
+}
