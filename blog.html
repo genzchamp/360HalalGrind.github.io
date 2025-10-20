@@ -1,44 +1,3 @@
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Blog — 360HalalGrind</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body class="page">
-  <header class="site-header">
-    <div class="container header-inner">
-      <a href="index.html" class="brand">360HalalGrind</a>
-      <nav class="main-nav" id="mainNav">
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="blog.html">Blog</a>
-        <a href="contact.html">Contact</a>
-      </nav>
-      <button class="nav-toggle" id="navToggle">☰</button>
-    </div>
-  </header>
-
-  <main>
-    <section class="container content">
-      <h1>Lessons & Guides</h1>
-      <p>Welcome to the guides area. Start with the first tutorial: <strong>How I built my first website using ChatGPT (step-by-step)</strong>.</p>
-
-      <!-- Sample article list -->
-      <article class="post">
-        <h2>How I Built My First Website Using ChatGPT</h2>
-        <p class="muted">A step-by-step walkthrough with prompts, screenshots, and free hosting.</p>
-        <p>TODO: Add the full tutorial content. Use your ChatGPT transcripts and screenshots here. Each post can be a short how-to or a long guide.</p>
-        <a class="btn btn-outline" href="contact.html">Request the Prompt Pack</a>
-      </article>
-
-      <article class="post">
-        <h2>Monetize with Halal Principles</h2>
-        <p class="muted">Ideas that align with halal ethics and build sustainable income.</p>
-        <p>TODO: Add content about affiliate marketing, digital products, and ethical monetization.</p>
-      </article>
-    </section>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -46,84 +5,163 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Blog | 360HalalGrind</title>
   <link rel="stylesheet" href="style.css" />
+
+  <style>
+    body {
+      margin: 0;
+      font-family: "Poppins", sans-serif;
+      background-color: #0b0b0b;
+      color: #fff;
+    }
+
+    header {
+      background-color: #111;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 2px solid gold;
+    }
+
+    header h1 {
+      color: gold;
+      font-size: 1.5rem;
+      letter-spacing: 1px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 1.5rem;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: gold;
+    }
+
+    main {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 1rem;
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid rgba(255, 215, 0, 0.2);
+      border-radius: 15px;
+      box-shadow: 0 0 20px rgba(255, 215, 0, 0.05);
+    }
+
+    .blog-post h1 {
+      color: gold;
+      text-align: center;
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+    }
+
+    .blog-post p {
+      line-height: 1.7;
+      font-size: 1rem;
+      margin: 0.8rem 0;
+    }
+
+    .blog-post h2 {
+      color: #ffd700;
+      margin-top: 2rem;
+      font-size: 1.3rem;
+    }
+
+    ul {
+      margin: 1rem 0 1rem 1.5rem;
+    }
+
+    li {
+      margin-bottom: 0.5rem;
+    }
+
+    pre {
+      background-color: #1a1a1a;
+      color: #00ffcc;
+      padding: 0.8rem;
+      border-radius: 8px;
+      overflow-x: auto;
+    }
+
+    blockquote {
+      border-left: 4px solid gold;
+      padding-left: 1rem;
+      font-style: italic;
+      color: #ddd;
+      margin: 1.5rem 0;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1.5rem;
+      border-top: 2px solid gold;
+      margin-top: 3rem;
+      color: #aaa;
+      font-size: 0.9rem;
+    }
+
+    footer span {
+      color: gold;
+    }
+  </style>
 </head>
+
 <body>
   <header>
-    <!-- Your navbar/menu -->
+    <h1>360HalalGrind</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="blog.html">Blog</a>
+      <a href="contact.html">Contact</a>
+    </nav>
   </header>
 
   <main>
-    <!-- BLOG POSTS GO HERE -->
+    <section class="blog-post">
+      <h1>How I Built My First Website Using ChatGPT (Step-by-Step)</h1>
+      <p><em>By Nasiruddeen Abdulkarim (Oba) — Founder of 360HalalGrind</em></p>
+
+      <p>In the name of Allah, the Most Merciful. I’m Nasiruddeen Abdulkarim, also known as <strong>Oba</strong>. I created <strong>360HalalGrind.com</strong> from scratch — with no money, no coding experience, and nothing but my Android phone, internet access, and ChatGPT as my teacher. Here’s how it all began.</p>
+
+      <h2>Step 1 — The Vision</h2>
+      <p>Every idea starts with intention. Mine was simple: to build a digital space that represents <strong>Halal Grind</strong> — Halal wealth, Halal work, and living only with the Permission of The Unique ONE.</p>
+
+      <h2>Step 2 — Discovering ChatGPT</h2>
+      <p>I had no background in web development. But when I found ChatGPT, I realized I could learn and build at the same time. I started by asking:</p>
+      <pre><code>"ChatGPT, help me create my first website using only my Android phone."</code></pre>
+
+      <h2>Step 3 — Building With Free Tools</h2>
+      <ul>
+        <li><strong>GitHub Pages:</strong> free hosting to publish my site.</li>
+        <li><strong>Stackblitz:</strong> for editing code directly on my phone.</li>
+        <li><strong>Canva:</strong> for creating my logo and banner designs.</li>
+      </ul>
+
+      <h2>Step 4 — The First Launch</h2>
+      <p>I copied ChatGPT’s code into a new GitHub repository, pushed my files, and activated GitHub Pages. When I visited my link and saw my site live, I couldn’t stop smiling — <em>Alhamdulillah</em>, it worked!</p>
+
+      <h2>Step 5 — Expanding the Vision</h2>
+      <p>I started building multiple pages (Home, About, Blog, Contact). I wanted bold colors — <strong>gold, white, and neon ash on a dark rich background</strong> — representing faith and luxury through simplicity.</p>
+
+      <h2>Step 6 — Lessons Learned</h2>
+      <ul>
+        <li>You don’t need money to start — only effort and faith.</li>
+        <li>Technology can serve your Deen if you use it right.</li>
+        <li>ChatGPT is more than an AI — it’s a teacher if you learn to ask right.</li>
+      </ul>
+
+      <blockquote><strong>“Halal Grind, Halal Wealth. Good Life & Living only with the Permission of The Unique ONE.”</strong></blockquote>
+
+      <p><em>– Nasiruddeen Abdulkarim (Oba)</em></p>
+    </section>
   </main>
 
   <footer>
-    <!-- Your footer -->
+    <p>&copy; <span>360HalalGrind</span> | Built by Faith, Focus & Grind.</p>
   </footer>
 </body>
 </html>
-  </main>
-
-  <footer class="site-footer">
-    <div class="container footer-inner">
-      <div class="footer-left">
-        <p class="brand-small">360HalalGrind</p>
-      </div>
-      <div class="footer-right">
-        <nav class="foot-nav">
-          <a href="privacy.html">Privacy</a>
-          <a href="terms.html">Terms</a>
-        </nav>
-      </div>
-    </div>
-    <div class="container copyright">
-      <small>© <span id="year3"></span> 360HalalGrind.</small>
-    </div>
-  </footer>
-
-  <script src="main.js"></script>
-</body>
-</html>
-
-
-<section class="blog-post">
-  <h1>How I Built My First Website Using ChatGPT (Step-by-Step)</h1>
-  <p><em>By Nasiruddeen Abdulkarim (Oba) — Founder of 360HalalGrind</em></p>
-
-  <p>In the name of Allah, the Most Merciful. I’m Nasiruddeen Abdulkarim, also known as <strong>Oba</strong>. I created <strong>360HalalGrind.com</strong> from scratch — with no money, no coding experience, and nothing but my Android phone, internet access, and ChatGPT as my teacher. Here’s how it all began.</p>
-
-  <h2>Step 1 — The Vision</h2>
-  <p>Every idea starts with intention. Mine was simple: to build a digital space that represents <strong>Halal Grind</strong> — Halal wealth, Halal work, and living only with the Permission of The Unique ONE.</p>
-  <p>I wanted to share my journey, teach what I’m learning, and help others use technology in ways that please Allah. That’s how the name <strong>360 Halal Grind</strong> was born — a circle of faith, focus, and financial growth.</p>
-
-  <h2>Step 2 — Discovering ChatGPT</h2>
-  <p>I had no background in web development. But when I found ChatGPT, I realized I could learn and build at the same time. I started by asking simple questions like:</p>
-  <pre><code>"ChatGPT, help me create my first website using only my Android phone."</code></pre>
-  <p>That single prompt opened a new world for me. ChatGPT generated the first HTML and CSS code that became the foundation of my website.</p>
-
-  <h2>Step 3 — Building With Free Tools</h2>
-  <ul>
-    <li><strong>GitHub Pages:</strong> free hosting to publish my site.</li>
-    <li><strong>Stackblitz:</strong> for editing code directly on my phone.</li>
-    <li><strong>Canva:</strong> for creating my logo and banner designs.</li>
-  </ul>
-  <p>These tools made it possible to go from zero to live site — completely free.</p>
-
-  <h2>Step 4 — The First Launch</h2>
-  <p>I copied ChatGPT’s code into a new GitHub repository, pushed my files, and activated GitHub Pages. When I visited my link and saw my site live, I couldn’t stop smiling — <em>Alhamdulillah</em>, it worked!</p>
-
-  <h2>Step 5 — Expanding the Vision</h2>
-  <p>After the first success, I started building multiple pages (Home, About, Blog, Contact). I wanted bold colors — <strong>gold, white, and neon ash on a dark rich background</strong> — representing faith and luxury through simplicity.</p>
-  <p>Every time I got stuck, I returned to ChatGPT, learned something new, and improved the design. Slowly, it started looking professional — something I could truly call <em>mine</em>.</p>
-
-  <h2>Step 6 — Lessons Learned</h2>
-  <ul>
-    <li>You don’t need money to start — you need intention and effort.</li>
-    <li>Technology can serve your faith and purpose if you use it right.</li>
-    <li>ChatGPT is more than an AI — it’s a teacher if you learn to ask the right questions.</li>
-  </ul>
-
-  <h2>Final Words</h2>
-  <p>If you’ve ever felt stuck, remember — Allah already gave you the tools and time you need. Use what’s in your hands, stay sincere, and you’ll be amazed how far you can go.</p>
-  <blockquote><strong>“Halal Grind, Halal Wealth. Good Life & Living only with the Permission of The Unique ONE.”</strong></blockquote>
-  <p><em>– Nasiruddeen Abdulkarim (Oba)</em></p>
-</section>
