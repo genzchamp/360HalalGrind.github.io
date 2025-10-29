@@ -3,6 +3,12 @@
    Dark rich background + Gold + White + Neon-ash accents
    Mobile-first, responsive
 */
+.site-logo {
+  height: 60px; /* adjust size */
+  width: auto;
+  vertical-align: middle;
+  margin-right: 10px;
+}
 
 /* === Variables === */
 :root{
