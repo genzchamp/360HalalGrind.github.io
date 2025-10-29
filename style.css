@@ -205,3 +205,28 @@ img{max-width:100%;height:auto;display:block}
 /* tiny animation to make the hero-card float */
 .card-brand{transition:transform 600ms var(--ease)}
 .card-brand:hover{transform:translateY(-6px)}
+.contact-section {
+  text-align: center;
+  padding: 80px 20px;
+  color: #fff;
+}
+
+.btn-gold {
+  background: linear-gradient(90deg, gold, #f4c10f);
+  color: #111;
+  padding: 12px 30px;
+  border-radius: 50px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.btn-gold:hover {
+  background: linear-gradient(90deg, #f4c10f, gold);
+  transform: scale(1.05);
+}
+
+.socials a {
+  color: #f4c10f;
+  text-decoration: none;
+}
