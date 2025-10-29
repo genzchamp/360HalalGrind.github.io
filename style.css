@@ -309,3 +309,9 @@ img{max-width:100%;height:auto;display:block}
     font-size: 1rem;
   }
 }
+.site-logo {
+  height: 60px;          /* Adjust size to fit */
+  width: auto;           /* Keeps the real proportions */
+  object-fit: contain;   /* Prevents distortion */
+  border-radius: 8px;    /* Optional – adds a smooth corner */
+}
