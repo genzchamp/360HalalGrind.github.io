@@ -230,3 +230,76 @@ img{max-width:100%;height:auto;display:block}
   color: #f4c10f;
   text-decoration: none;
 }
+.premium-section {
+  background: radial-gradient(circle at top, #111 0%, #000 100%);
+  text-align: center;
+  padding: 80px 20px;
+  color: #fff;
+  border-top: 1px solid #333;
+}
+
+.premium-section h2 {
+  color: gold;
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+.premium-section p {
+  font-size: 1.1rem;
+  max-width: 600px;
+  margin: 0 auto 25px;
+  line-height: 1.6;
+  color: #ddd;
+}
+
+.btn-gold {
+  background: linear-gradient(90deg, gold, #f4c10f);
+  color: #111;
+  padding: 12px 30px;
+  border-radius: 50px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: 0.3s;
+  display: inline-block;
+  margin-bottom: 30px;
+}
+
+.btn-gold:hover {
+  background: linear-gradient(90deg, #f4c10f, gold);
+  transform: scale(1.05);
+}
+
+.socials {
+  margin-top: 30px;
+}
+
+.socials h3 {
+  color: gold;
+  font-size: 1.3rem;
+}
+
+.socials a {
+  color: #f4c10f;
+  text-decoration: none;
+}
+
+.socials a:hover {
+  text-decoration: underline;
+}
+
+/* ✅ Responsive design */
+@media (max-width: 600px) {
+  .premium-section h2 {
+    font-size: 1.5rem;
+  }
+
+  .premium-section p {
+    font-size: 1rem;
+    padding: 0 10px;
+  }
+
+  .btn-gold {
+    width: 90%;
+    font-size: 1rem;
+  }
+}
