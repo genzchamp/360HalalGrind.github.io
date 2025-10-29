@@ -3,35 +3,97 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>-Halal Grind, Halal Wealth</title>
-<header style="text-align: center; padding: 10px;">
-  <img src="logo.png" alt="360 Halal Grind" style="max-width: 180px; height: auto;">
-</header>
+  <title>360HalalGrind — Halal Grind, Halal Wealth</title>
+
   <meta name="description" content="360HalalGrind — Halal Grind, Halal Wealth. GoodLife & living only with The Permission of The Unique ONE." />
   <link rel="stylesheet" href="style.css">
   <link rel="icon" href="" />
+  <style>
+    /* Minimal page-level styles to ensure layout looks correct even if your style.css differs */
+    :root {
+      --bg: #0b0b0b;
+      --panel: #121212;
+      --muted: #cfcfcf;
+      --gold: #D4AF37;
+      --white: #ffffff;
+      --container-width: 1100px;
+    }
+
+    html,body{height:100%;margin:0;background:var(--bg);color:var(--white);font-family:"Poppins", "Inter", system-ui, sans-serif;}
+    .container{max-width:var(--container-width);margin:0 auto;padding:0 18px;box-sizing:border-box;}
+
+    /* Logo section (centered, scrolls with page) */
+    .logo-wrap{ text-align:center; padding:20px 0 8px; }
+    .site-logo{ max-width:220px; height:auto; display:inline-block; }
+
+    /* Simple nav under logo for quick navigation (centered, unobtrusive) */
+    .nav-row{ text-align:center; margin:6px 0 18px; }
+    .nav-row a{ color:var(--muted); text-decoration:none; margin:0 12px; font-weight:600; font-size:0.95rem; }
+    .nav-row a:hover{ color:var(--white); }
+
+    /* Hero */
+    .hero{ padding:36px 0 28px; }
+    .hero-inner{ display:flex; gap:28px; align-items:center; justify-content:space-between; flex-wrap:wrap; }
+    .hero-text{ flex:1 1 480px; min-width:280px; }
+    .hero-text h1{ font-size:2.2rem; margin:0 0 10px; color:var(--white); }
+    .lead{ color:var(--muted); margin:0 0 8px; }
+    .sub{ color:#bdbdbd; margin-bottom:18px; line-height:1.6; }
+
+    .hero-cta{ display:flex; gap:12px; flex-wrap:wrap; }
+    .btn{ display:inline-block; padding:10px 18px; border-radius:8px; text-decoration:none; font-weight:700; }
+    .btn-primary{ background:linear-gradient(90deg,var(--gold),#f4c10f); color:#0b0b0b; }
+    .btn-outline{ border:1px solid #444; color:var(--white); background:transparent; }
+
+    /* Premium section */
+    .premium-section{ background: linear-gradient(180deg, rgba(255,255,255,0.02), transparent); border-top:1px solid rgba(255,215,0,0.05); padding:34px 0; text-align:center; }
+    .premium-section h2{ color:var(--gold); font-size:1.6rem; margin:0 0 8px; }
+    .premium-section p{ color:#d0d0d0; max-width:760px; margin:0 auto 18px; line-height:1.6; }
+    .btn-gold{ background:linear-gradient(90deg,var(--gold),#f4c10f); color:#0b0b0b; padding:12px 26px; border-radius:44px; font-weight:800; text-decoration:none; display:inline-block; }
+
+    /* Features */
+    .features{ padding:42px 0 36px; }
+    .section-title{ color:var(--gold); text-align:center; margin:0 0 22px; font-size:1.4rem; }
+    .grid{ display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:14px; }
+
+    .card{ background:var(--panel); padding:18px; border-radius:12px; box-shadow: 0 6px 18px rgba(0,0,0,0.4); }
+    .card h3{ margin:0 0 8px; color:var(--white); }
+    .card p{ margin:0; color:var(--muted); line-height:1.5; }
+
+    /* Quick start and footer */
+    .quick-start{ padding:36px 0 60px; }
+    .split{ display:flex; gap:22px; align-items:flex-start; flex-wrap:wrap; }
+    .quote-card{ background:linear-gradient(180deg,#0f0f0f,#0b0b0b); padding:18px; border-radius:10px; color:var(--muted); box-shadow:0 6px 12px rgba(0,0,0,0.45); }
+
+    footer.site-footer{ padding:20px 0; border-top:1px solid rgba(255,255,255,0.03); margin-top:20px; }
+    .footer-inner{ display:flex; justify-content:space-between; gap:18px; align-items:center; flex-wrap:wrap; }
+    .brand-small{ font-weight:700; color:var(--gold); margin:0 0 6px; }
+    .muted{ color:var(--muted); margin:0; }
+
+    /* Responsive */
+    @media (max-width:900px){
+      .hero-inner{ flex-direction:column-reverse; align-items:center; }
+      .site-logo{ max-width:180px; }
+    }
+    @media (max-width:600px){
+      .hero-text h1{ font-size:1.5rem; }
+      .nav-row a{ margin:0 8px; font-size:0.9rem; }
+      .site-logo{ max-width:150px; }
+    }
+  </style>
 </head>
 <body class="page">
-  <header class="site-header">
-    <div class="container header-inner">
-      <a href="index.html" class="brand">
-        <!-- simple SVG text logo -->
-        <svg width="160" height="40" viewBox="0 0 320 80" xmlns="http://www.w3.org/2000/svg" aria-label="360 Halal Grind">
-          <text x="0" y="55" font-family="Inter, system-ui, sans-serif" font-size="48" fill="#D4AF37" font-weight="700">360HALAL</text>
-          <text x="190" y="55" font-family="Inter, system-ui, sans-serif" font-size="24" fill="#FFFFFF" font-weight="600">GRIND</text>
-        </svg>
-      </a>
+  <!-- Centered logo (static, scrolls with page) -->
+  <div class="logo-wrap">
+    <img src="logo.png" alt="360 Halal Grind" class="site-logo">
+  </div>
 
-      <nav class="main-nav" id="mainNav">
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="blog.html">Blog</a>
-        <a href="contact.html">Contact</a>
-      </nav>
-
-      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">☰</button>
-    </div>
-  </header>
+  <!-- Small centered nav (optional) -->
+  <div class="nav-row">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="blog.html">Blog</a>
+    <a href="contact.html">Contact</a>
+  </div>
 
   <main>
     <!-- HERO -->
@@ -48,28 +110,29 @@
         </div>
 
         <div class="hero-art">
-          <!-- Decorative card / mockup -->
-          <div class="card-brand">
-            <div class="floating-360">360</div>
-            <div class="brand-line">HALAL GRIND</div>
+          <!-- Decorative card / mockup placeholder -->
+          <div class="card-brand" aria-hidden="true" style="background:transparent; border-radius:10px; padding:14px; display:inline-block; text-align:center;">
+            <div class="floating-360" style="font-weight:800; color:var(--gold); font-size:1.6rem;">360</div>
+            <div class="brand-line" style="color:var(--muted); font-weight:700; letter-spacing:2px;">HALAL GRIND</div>
           </div>
         </div>
       </div>
     </section>
-<section id="premium" class="premium-section">
-  <div class="container">
-    <h2>📘 Get Premium Tutorial</h2>
-    <p>
-      Unlock the complete <b>AI Website Creation eBook</b> and full step-by-step guide.
-      Learn how to build beautiful, professional websites using only your phone — guided by faith and creativity.
-    </p>
 
-    <a href="https://paystack.shop/pay/halalgrind" target="_blank" class="btn-gold">
-      💡 Get Premium Access – ₦5,000 / $5
-    </a>
+    <!-- Premium CTA (placed after hero / lessons) -->
+    <section id="premium" class="premium-section">
+      <div class="container">
+        <h2>📘 Get Premium Tutorial</h2>
+        <p>
+          Unlock the complete <b>AI Website Creation eBook</b> and full step-by-step guide.
+          Learn how to build beautiful, professional websites using only your phone — guided by faith and creativity.
+        </p>
 
- 
-</section>
+        <a href="https://paystack.shop/pay/halalgrind" target="_blank" class="btn-gold" rel="noopener">
+          💡 Get Premium Access – ₦5,000 / $5
+        </a>
+      </div>
+    </section>
 
     <!-- FEATURES / WHY -->
     <section class="features">
@@ -95,20 +158,20 @@
     <!-- QUICK START -->
     <section class="quick-start">
       <div class="container split">
-        <div>
+        <div style="flex:1 1 320px;">
           <h2>Start Your Halal Hustle</h2>
           <p>Follow a simple 3-step path — plan, build, publish. I’ll show you each step I used to launch my first website using ChatGPT.</p>
-          <ol class="steps">
+          <ol class="steps" style="color:var(--muted);">
             <li><strong>Plan</strong> — Choose your niche and goal.</li>
             <li><strong>Build</strong> — Use ChatGPT to generate structures and code.</li>
             <li><strong>Publish</strong> — Host for free and share your story.</li>
           </ol>
           <a class="btn btn-primary" href="blog.html">See Guides & Prompts</a>
         </div>
-        <div>
+        <div style="flex:1 1 260px;">
           <div class="quote-card">
-            <p class="q">“Living only with the Permission of The Unique ONE.”</p>
-            <p class="meta">— Nasiruddeen “Oba” Abdulkarim</p>
+            <p class="q" style="color:var(--white); font-size:1.05rem;">“Living only with the Permission of The Unique ONE.”</p>
+            <p class="meta" style="color:var(--muted); margin-top:8px;">— Nasiruddeen “Oba” Abdulkarim</p>
           </div>
         </div>
       </div>
@@ -129,11 +192,14 @@
         </nav>
       </div>
     </div>
-    <div class="container copyright">
+    <div class="container copyright" style="text-align:center; margin-top:14px;">
       <small>© <span id="year"></span> 360HalalGrind. All rights reserved.</small>
     </div>
   </footer>
 
-  <script src="main.js"></script>
+  <script>
+    // Fill copyright year
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
